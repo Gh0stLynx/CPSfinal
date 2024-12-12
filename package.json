@@ -39,9 +39,10 @@
     "mini-css-extract-plugin": "0.8.0",
     "node-sass": "^4.14.1",
     "postcss-loader": "3.0.0",
+    "postcss-selector-parser": "^7.0.0",
     "sass-loader": "7.2.0",
-    "webpack": "4.41.2",
-    "webpack-cli": "3.3.7",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.11.0"
   },
   "engineStrict": true,

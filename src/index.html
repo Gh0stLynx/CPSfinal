@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,4 +13,264 @@
     <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
     <h3>Welcome to Webpack 4 starter </h3>
   </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPS</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+     <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  
+  <body>
+
+    <div class="content">
+
+     <!--хедер-->
+
+    <header class="header">
+      <div class="header__logo">
+        <img src="./img/Group.svg" alt="CPS Логотип" />
+      </div>
+      <div class="header__divider"></div>
+      <a href="#" class="header__burger toggle-sidebar" aria-label="Услуги"></a>
+      <a href="#" class="header__repair" aria-label="Оставить заявку"></a>
+      <a href="#" class="header__checkstatus" aria-label="Статус ремонта"></a>
+      <div class="header__tablet">
+        <div class="tablet">
+          <a href="#" class="tablet__call" aria-label="Позвонить"></a>
+          <a href="#" class="tablet__chat" aria-label="Написать"></a>
+          <a href="#" class="tablet__profile" aria-label="Профиль"></a>
+          <div class="tablet__divider"></div>
+        </div>
+      </div>
+    </header>
+
+    <!--мэйн-->
+
+    <main class="main">
+      <div class="title">
+        <h1 class="title__description">Услуги и сервисы</h1>
+        <div class="title__computer">
+          <div class="upper-menu">
+            <a href="#" class="upper-menu__repair"><b>Оставить заявку</b></a>
+            <a href="#" class="upper-menu__checkstatus"
+              ><b>Статус ремонта</b></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <nav class="services-list">
+        <button type="button" class="services-list__button"
+          >Ремонтируемые устройства</button
+        >
+        <button type="button" class="services-list__button"
+          >Дополнительные услуги</button
+        >
+        <button type="button" class="services-list__button"
+          >Цены на услуги</button
+        >
+        <button type="button" class="services-list__button"
+          >Адреса сервисных центров</button
+        >
+        <button type="button" class="services-list__button"
+          >Специальные цены</button
+        >
+        <button type="button" class="services-list__button">Отзывы</button>
+      </nav>
+
+      <section class="service">
+        <article class="service__content content">
+          <p class="content__about-company"
+            >Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.<br />
+            <br />
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных
+            клиентов.<br />
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.</p
+          >
+          <a href="#" class="content__service-link"><b>Читать далее</b></a>
+        </article>
+
+        <aside class="service__img">
+          <img src="./img/CPS.jpg" alt="Изображение услуги" />
+        </aside>
+      </section>
+    </main>
+
+  <!-- первый свипер-->
+
+    <h1 class="section-title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
+
+    <div class="swiper-container container"> 
+      <div class="slides slides_cut slides_full swiper-wrapper">
+
+        <a href="#" class="slides__link link-lenovo swiper-slide" aria-label="Lenovo"></a>
+        <a href="#" class="slides__link link-samsung swiper-slide" aria-label="Samsung"></a>
+        <a href="#" class="slides__link link-apple swiper-slide" aria-label="Apple"></a>
+        <a
+          href="#"
+          class="slides__link link-viewsonic swiper-slide"
+          aria-label="ViewSonic"
+        ></a>
+        <a href="#" class="slides__link link-bosch swiper-slide" aria-label="Bosch"></a>
+        <a href="#" class="slides__link link-hp swiper-slide" aria-label="Hp"></a>
+        <a href="#" class="slides__link link-aser swiper-slide" aria-label="Aser"></a>
+        <a href="#" class="slides__link link-sony swiper-slide" aria-label="Sony"></a>
+        <a href="#" class="slides__link link-lenovo swiper-slide" aria-label="Lenovo"></a>
+        <a href="#" class="slides__link link-samsung swiper-slide" aria-label="Samsung"></a>
+        <a href="#" class="slides__link link-apple swiper-slide" aria-label="Apple"></a>
+      </div>
+    </div>
+
+      <div class="swiper-pagination pagination-position"></div>
+    </div>   
+
+    <div class="button-container">
+      <button
+        type="button"
+        class="switch-button switch-button_active"
+        aria-label="Показать все/скрыть"
+      >
+        Показать все
+      </button>
+    </div>
+
+    <!--второй свипер-->
+
+    <h1 class="section-title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h1>
+
+    <div class="swiper-container container"> 
+      <div class="slides slides_cut slides_full swiper-wrapper">
+
+        <a href="#" class="slides__link link-laptop swiper-slide" aria-label="Ремонт ноутбуков"></a>
+        <a href="#" class="slides__link link-tablet swiper-slide" aria-label="Ремонт планшетов"></a>
+        <a href="#" class="slides__link link-pc swiper-slide" aria-label="Ремонт ПК"></a>
+        <a href="#" class="slides__link link-monitor swiper-slide" aria-label="Ремонт мониторов"></a>
+      
+      </div>
+    </div>
+
+      <div class="swiper-pagination pagination-position"></div>
+    </div>   
+
+    <div class="button-container">
+      <button
+        type="button"
+        class="switch-button switch-button_active"
+        aria-label="Показать все/скрыть"
+      >
+        Показать все
+      </button>
+    </div>
+
+    <!--третий свипер-->
+
+
+    <!--футер-->
+
+  </div>
+
+
+    <!--боковое меню-->
+
+
+    <div class="sidebar">
+      <div class="block">
+        <div class="aside-header aside-header-position">
+          <button
+            type="button"
+            class="aside-header__back-button button toggle-sidebar"
+            aria-label="Назад"
+          ></button>
+          <div class="aside-header__logo">
+            <img src="./img/Group.svg" alt="CPS Логотип" />
+          </div>
+          <button
+            type="button"
+            class="aside-header__search-button button"
+            aria-label="Поиск"
+          ></button>
+        </div>
+
+        <aside>
+          <nav class="services">
+            <a href="#" class="services-link" aria-label="Ремонт техники"
+              >Ремонт техники</a
+            >
+            <a href="#" class="services-link" aria-label="Услуги и сервисы"
+              >Услуги и сервисы</a
+            >
+            <a
+              href="#"
+              class="services-link"
+              aria-label="Корпоративным клиентам"
+              >Корпоративным клиентам</a
+            >
+            <a href="#" class="services-link" aria-label="Продавцам техники"
+              >Продавцам техники</a
+            >
+            <a href="#" class="services-link" aria-label="Партнерам"
+              >Партнерам</a
+            >
+            <a href="#" class="services-link" aria-label="Производителям"
+              >Производителям</a
+            >
+            <a href="#" class="services-link" aria-label="Наши сервисные центры"
+              >Наши сервисные центры</a
+            >
+            <a href="#" class="services-link" aria-label="Контакты">Контакты</a>
+          </nav>
+        </aside>
+
+        <div class="aside-footer aside-footer-position">
+          <div class="contacts">
+            <button
+              type="button"
+              class="contacts__chat-copy-button button"
+              aria-label="Чат"
+            ></button>
+            <button
+              type="button"
+              class="contacts__chat-button button"
+              aria-label="Сообщение"
+            ></button>
+            <button
+              type="button"
+              class="contacts__profile-button button"
+              aria-label="Профиль"
+            ></button>
+          </div>
+          <a href="#" class="mail" aria-label="адрес почты">mail@cps.com</a>
+          <a href="#" class="tel" aria-label="номер телефона">8 800 890 8900</a>
+          <div class="lang">
+            <a href="#" class="lang__ru" aria-label="RU">RU</a>
+            <a href="#" class="lang__en" aria-label="EN">EN</a>
+            <a href="#" class="lang__ch" aria-label="CH">CH</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!--боковое меню 2-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="dist/js/bundle.js"></script>
+  </body>
 </html>
+
+  
+
