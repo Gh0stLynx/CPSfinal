@@ -53,7 +53,7 @@ button:focus {
 }
 
 .title__description {
-  margin-left: 24px;
+  margin-left: 8px;
   font-family: 'TT Lakes Bold', sans-serif;
   font-size: 28px;
   line-height: 40px;
@@ -63,7 +63,7 @@ button:focus {
 .title__description::before {
   content: '';
   position: absolute;
-  left: -24px;
+  left: -8px;
   width: 4px;
   height: 40px;
   top: 50%;
@@ -76,11 +76,10 @@ button:focus {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-family: 'TT Lakes Medium', sans-serif;
   font-size: 16px;
   color: $grayText;
-  margin: 0 auto;
+  align-items: center;
 
   .form__input {
     height: 48px;
@@ -95,20 +94,26 @@ button:focus {
   .form__submit {
     width: 136px;
     height: 32px;
-  }
-
-  label {
-    margin-bottom: 5px;
+    align-self: flex-end;
   }
 
   input,
   textarea {
-    margin-bottom: 10px;
+    /*margin: 10px auto; */
     border: 1px solid $lineGrayColor;
     border-radius: 5px;
     font-family: 'TT Lakes Medium', sans-serif;
     font-size: 16px;
     color: $lightGrayText;
+    padding-left: 10px;
+  }
+
+  textarea {
+    padding-top: 15px;
+  }
+
+  label {
+    margin-bottom: 10px;
   }
 
   .conf {
@@ -119,24 +124,30 @@ button:focus {
     span {
       color: $pinkText;
     }
+
+    .conf-position {
+      margin-left: 8px;
+    }
   }
 
   button {
-    padding: 10px 10px;
     background-color: $pinkDecor;
     color: $bgWhiteColor;
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     text-transform: uppercase;
     font-family: 'TT Lakes Bold', sans-serif;
     font-size: 12px;
     line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
   }
 
-  .send-button span {
-    margin-left: 15px;
+  .form__submit span {
+    margin-left: 5px;
   }
 }
 

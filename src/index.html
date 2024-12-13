@@ -279,8 +279,7 @@
             <h1 class="title__description">Обратная связь</h1>
           </div>
 
-          <div class="form">
-          <form>
+          <form class="form">
             <label for="name">
             <input class="form__input" type="text" id="name" name="name" placeholder="Имя" required>
             </label>
@@ -290,20 +289,23 @@
             </label>
         
             <label for="email">
-            <input class="form__input" type="email" id="email" name="email" placeholder=" Email" required>
+            <input class="form__input" type="email" id="email" name="email" placeholder="Email" required>
             </label>
         
             <label for="message">
-            <textarea class="form__textarea" id="message" name="message" placeholder="Сообщение" required></textarea>
+            <textarea class="form__textarea " id="message" name="message" placeholder="Сообщение" required></textarea>
             </label>
         
-            <div class="conf">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></div>
-
-            <button type="submit" class="form__submit">Отправить <span>&#62;</span></button>
-        </form>
+            <div class="conf">
+              <div class="conf-position">Нажимая “отправить”, вы даете согласие на 
+                <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span>
+              </div>
           </div>
-      
-        </div>
+
+            <button type="submit" class="form__submit">Отправить<span>&#62;</span></button>
+        </form>
+      </div>
+     </div>
 
 
 
@@ -311,7 +313,7 @@
 
      <div class="sidebar-third">
       <div class="block">
-        <div class="aside-header aside-header-position">
+        
           <button
             type="button"
             class="aside-header__back-button button toggle-sidebar-third"
