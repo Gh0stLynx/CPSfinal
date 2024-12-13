@@ -1,0 +1,45 @@
+.sidebar-third {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  transition: right 0.3s;
+  background-color: $bgWhiteColor;
+}
+
+.content {
+  margin-right: 0;
+}
+
+.sidebar-third.active {
+  right: 0;
+}
+
+.block {
+  width: 320px;
+  max-height: 100%;
+  right: 0;
+  background: $bgWhiteColor;
+  box-shadow: 16px 0px 52px 0px $shadowColorOne,
+    -2px 0px 4px 0px $shadowColorTwo;
+  position: absolute;
+}
+
+.aside-header__back-button {
+  position: absolute;
+  background: url('../img/close.svg');
+  height: 40px;
+  width: 40px;
+  border: none;
+  left: 24px;
+}
+
+button:hover,
+button:focus {
+  transition-duration: 3s;
+  opacity: 0.3;
+}
+
+/*@media (min-width: 1366px) {
+} */

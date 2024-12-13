@@ -1,0 +1,144 @@
+.sidebar-second {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  transition: right 0.3s;
+  background-color: $bgWhiteColor;
+  border-left: 1px solid $lineBlueColor;
+}
+
+.content {
+  margin-right: 0;
+}
+
+.sidebar-second.active {
+  right: 0;
+}
+
+.block {
+  width: 320px;
+  max-height: 100%;
+  right: 0;
+  background: $bgWhiteColor;
+  box-shadow: 16px 0px 52px 0px $shadowColorOne,
+    -2px 0px 4px 0px $shadowColorTwo;
+  position: absolute;
+}
+
+.aside-header__back-button {
+  position: absolute;
+  background: url('../img/close.svg');
+  height: 40px;
+  width: 40px;
+  border: none;
+  left: 24px;
+}
+
+button:hover,
+button:focus {
+  transition-duration: 3s;
+  opacity: 0.3;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title-position {
+  margin-top: 50px;
+}
+
+.title__description {
+  margin-left: 24px;
+  font-family: 'TT Lakes Bold', sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  position: relative;
+}
+
+.title__description::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  width: 4px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $blueDecor;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'TT Lakes Medium', sans-serif;
+  font-size: 16px;
+  color: $grayText;
+  margin: 0 auto;
+
+  .form__input {
+    height: 48px;
+    min-width: 288px;
+  }
+
+  .form__textarea {
+    height: 118px;
+    min-width: 288px;
+  }
+
+  .form__submit {
+    width: 136px;
+    height: 32px;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 10px;
+    border: 1px solid $lineGrayColor;
+    border-radius: 5px;
+    font-family: 'TT Lakes Medium', sans-serif;
+    font-size: 16px;
+    color: $lightGrayText;
+  }
+
+  .conf {
+    font-family: 'TT Lakes Medium', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grayText;
+    span {
+      color: $pinkText;
+    }
+  }
+
+  button {
+    padding: 10px 10px;
+    background-color: $pinkDecor;
+    color: $bgWhiteColor;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'TT Lakes Bold', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .send-button span {
+    margin-left: 15px;
+  }
+}
+
+/*@media (min-width: 1366px) {
+} */

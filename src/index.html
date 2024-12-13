@@ -45,8 +45,8 @@
       <a href="#" class="header__checkstatus" aria-label="Статус ремонта"></a>
       <div class="header__tablet">
         <div class="tablet">
-          <a href="#" class="tablet__call" aria-label="Позвонить"></a>
-          <a href="#" class="tablet__chat" aria-label="Написать"></a>
+          <a href="#" class="tablet__call toggle-sidebar-second" aria-label="Позвонить"></a>
+          <a href="#" class="tablet__chat toggle-sidebar-third" aria-label="Написать"></a>
           <a href="#" class="tablet__profile" aria-label="Профиль"></a>
           <div class="tablet__divider"></div>
         </div>
@@ -238,12 +238,12 @@
           <div class="contacts">
             <button
               type="button"
-              class="contacts__chat-copy-button button"
+              class="contacts__chat-copy-button button toggle-sidebar-second"
               aria-label="Чат"
             ></button>
             <button
               type="button"
-              class="contacts__chat-button button"
+              class="contacts__chat-button button toggle-sidebar-third"
               aria-label="Сообщение"
             ></button>
             <button
@@ -264,6 +264,61 @@
     </div>
 
      <!--боковое меню 2-->
+
+     <div class="sidebar-second">
+      <div class="block">
+              
+          <button
+            type="button"
+            class="aside-header__back-button button toggle-sidebar-second"
+            aria-label="Назад"
+          ></button>
+        
+
+          <div class="title title-position">
+            <h1 class="title__description">Обратная связь</h1>
+          </div>
+
+          <div class="form">
+          <form>
+            <label for="name">
+            <input class="form__input" type="text" id="name" name="name" placeholder="Имя" required>
+            </label>
+        
+            <label for="phone">
+            <input class="form__input" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+            </label>
+        
+            <label for="email">
+            <input class="form__input" type="email" id="email" name="email" placeholder=" Email" required>
+            </label>
+        
+            <label for="message">
+            <textarea class="form__textarea" id="message" name="message" placeholder="Сообщение" required></textarea>
+            </label>
+        
+            <div class="conf">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></div>
+
+            <button type="submit" class="form__submit">Отправить <span>&#62;</span></button>
+        </form>
+          </div>
+      
+        </div>
+
+
+
+     <!--боковое меню 3 -->
+
+     <div class="sidebar-third">
+      <div class="block">
+        <div class="aside-header aside-header-position">
+          <button
+            type="button"
+            class="aside-header__back-button button toggle-sidebar-third"
+            aria-label="Назад"
+          ></button>
+        </div> 
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
