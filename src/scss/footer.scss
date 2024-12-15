@@ -1,0 +1,68 @@
+footer {
+  margin-bottom: 35px;
+  margin-top: 35px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 65px;
+}
+
+.footer {
+  max-width: 100%;
+  height: 129px;
+  font-family: 'TT Lakes Compressed Regular', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  color: $grayText;
+  background: linear-gradient(270deg, $bgGrayColor 0%, $bgWhiteColor 98.61%);
+  border-top: 1px solid $lineBlueColor;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-section__info {
+  max-width: 330px;
+  text-align: center;
+}
+
+.footer-section__copyright {
+  text-align: center;
+}
+
+.footer-section__policy {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 80px;
+  }
+
+  .footer-section {
+    flex-direction: row;
+  }
+
+  .footer-section__info {
+    max-width: 218px;
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .footer-section__copyright {
+    align-self: flex-start;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer-section__info {
+    max-width: 330px;
+  }
+}
