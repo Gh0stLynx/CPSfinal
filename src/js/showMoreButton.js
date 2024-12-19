@@ -1,13 +1,13 @@
 export const myVariable = 'CPSfinal'
 
 const switchButton = document.querySelector('.switch-button')
-const logos = document.querySelector('.slides')
-const logosLinks = logos.querySelectorAll('.slides__link')
+const slides = document.querySelector('.slides')
+const slidesLinks = slides.querySelectorAll('.slides__link')
 
 switchButton.addEventListener('click', function () {
-  logos.classList.toggle('slides_cut')
+  slides.classList.toggle('slides_cut')
 
-  switchButton.textContent = logos.classList.contains('slides_cut')
+  switchButton.textContent = slides.classList.contains('slides_cut')
     ? 'Показать все'
     : 'Скрыть'
 
