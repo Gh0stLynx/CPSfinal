@@ -7,14 +7,14 @@
   transition: right 0.3s;
   background-color: $bgWhiteColor;
   z-index: 2;
+
+  &.active {
+    right: 0;
+  }
 }
 
 .content {
   margin-right: 0;
-}
-
-.sidebar-third.active {
-  right: 0;
 }
 
 .block {
@@ -34,43 +34,43 @@
   width: 40px;
   border: none;
   left: 24px;
-}
 
-button:hover,
-button:focus {
-  transition-duration: 3s;
-  opacity: 0.3;
+  &:hover,
+  &:focus {
+    transition-duration: 3s;
+    opacity: 0.3;
+  }
 }
 
 .title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
 
-.title-position {
-  margin-top: 50px;
-}
+  &-position {
+    margin-top: 50px;
+  }
 
-.title__description {
-  margin-left: 8px;
-  font-family: 'TT Lakes Bold', sans-serif;
-  font-size: 28px;
-  line-height: 40px;
-  position: relative;
-}
+  &__description {
+    margin-left: 8px;
+    font-family: 'TT Lakes Bold', sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
 
-.title__description::before {
-  content: '';
-  position: absolute;
-  left: -8px;
-  width: 4px;
-  height: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: $blueDecor;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      width: 4px;
+      height: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $blueDecor;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
 }
 
 .form {
@@ -81,15 +81,19 @@ button:focus {
   color: $grayText;
   align-items: center;
 
-  .form__input {
+  &__input {
     height: 48px;
     min-width: 288px;
   }
 
-  .form__submit {
+  &__submit {
     width: 136px;
     height: 32px;
     align-self: flex-end;
+
+    span {
+      margin-left: 5px;
+    }
   }
 
   input,
@@ -111,12 +115,13 @@ button:focus {
     font-size: 14px;
     line-height: 16px;
     color: $grayText;
-    span {
-      color: $pinkText;
+
+    &-position {
+      margin-left: 8px;
     }
 
-    .conf-position {
-      margin-left: 8px;
+    span {
+      color: $pinkText;
     }
   }
 
@@ -135,11 +140,4 @@ button:focus {
     vertical-align: middle;
     margin-right: 20px;
   }
-
-  .form__submit span {
-    margin-left: 5px;
-  }
 }
-
-/*@media (min-width: 1366px) {
-} */
