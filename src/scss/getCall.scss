@@ -3,7 +3,7 @@
   height: 100%;
   position: fixed;
   top: 0;
-  right: -380px;
+  right: -420px;
   transition: right 0.3s;
   background-color: $bgWhiteColor;
   z-index: 2;
@@ -19,7 +19,7 @@
 
 .block {
   width: 320px;
-  max-height: 100%;
+  height: 1024px;
   right: 0;
   background: $bgWhiteColor;
   box-shadow: 16px 0px 52px 0px $shadowColorOne,
@@ -33,7 +33,8 @@
   height: 40px;
   width: 40px;
   border: none;
-  left: 24px;
+  top: 24px;
+  left: -20px;
 
   &:hover,
   &:focus {
@@ -143,9 +144,21 @@
 }
 
 @media (min-width: 1366px) {
-  button.aside-header__back-button-position {
-    position: absolute;
-    top: 20px;
-    margin-left: -80px;
+  
+  .aside-header {
+    &__back-button {
+      left: -120px;
+    }
+
+    .title {
+      &-position {
+        position: absolute;
+        top: -75px;
+      }
+    }
+
+    .form {
+      margin-top: 90px;
+    }
   }
 }
