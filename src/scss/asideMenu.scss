@@ -50,6 +50,7 @@
   width: 40px;
   border: none;
   left: 24px;
+  top: 20px;
 }
 
 .aside-header__search-button {
@@ -204,5 +205,15 @@ aside {
 
   .content {
     margin-left: 320px;
+  }
+
+  .aside-header__back-button {
+    position: absolute;
+    top: 20px;
+    margin-left: -80px;
+  }
+
+  .aside-header__logo {
+    margin-left: 20px;
   }
 }
