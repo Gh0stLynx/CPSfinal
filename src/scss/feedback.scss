@@ -151,3 +151,11 @@
     margin-right: 20px;
   }
 }
+
+@media (min-width: 1366px) {
+  button.aside-header__back-button-position {
+    position: absolute;
+    top: 20px;
+    margin-left: -80px;
+  }
+}

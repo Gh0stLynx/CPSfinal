@@ -20,7 +20,7 @@
         <div class="aside-header aside-header-position">
           <button
             type="button"
-            class="aside-header__back-button button toggle-sidebar"
+            class="aside-header__back-button aside-header__back-button-position button toggle-sidebar"
             aria-label="Назад"
           ></button>
           <div class="aside-header__logo">
@@ -98,7 +98,7 @@
       <div class="block">
         <button
           type="button"
-          class="aside-header__back-button button toggle-sidebar-second"
+          class="aside-header__back-button aside-header__back-button-position button toggle-sidebar-second"
           aria-label="Назад"
         ></button>
 
@@ -171,7 +171,7 @@
       <div class="block">
         <button
           type="button"
-          class="aside-header__back-button button toggle-sidebar-third"
+          class="aside-header__back-button aside-header__back-button-position button toggle-sidebar-third"
           aria-label="Назад"
         ></button>
 
@@ -414,9 +414,9 @@
 
       <!--третий свипер-->
 
-      <h1 class="section-title">ЦЕНЫ НА УСЛУГИ</h1>
+      <!--<h1 class="section-title">ЦЕНЫ НА УСЛУГИ</h1>
 
-      <!-- <div class="swiper-container container">
+       <div class="swiper-container container">
         <div class="slides swiper-wrapper">
           <table class="slides__container swiper-slide">
             <td
@@ -564,25 +564,74 @@
     <div class="price-info price-info-position">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</div>
     <a href="#" class="comercial-proposion">Получить коммерческое предложение <span class="pink-decor">&#62;</span></a> -->
 
+      <h1 class="section-title">ЦЕНЫ НА УСЛУГИ</h1>
+
       <div class="swiper container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+        <div class="slides swiper-wrapper">
+          <div class="swiper-slide slide-view">
             <p>Диагностика</p>
             <p>Цена: Бесплатно</p>
             <p>Срок: 30 мин</p>
-            <button>Заказать</button>
+            <button type="submit" class="form__submit"
+              >Заказать<span>&#62;</span></button
+            >
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-view">
             <p>Замена дисплея</p>
             <p>Цена: 1000 ₽</p>
             <p>Срок: 30-120 мин</p>
-            <button>Заказать</button>
+            <button type="submit" class="form__submit"
+              >Заказать<span>&#62;</span></button
+            >
+          </div>
+          <div class="swiper-slide slide-view">
+            <p
+              >Замена полифонического<br />
+              динамика</p
+            >
+            <p>Цена: 1000 ₽</p>
+            <p>Срок: 30-120 мин</p>
+            <button type="submit" class="form__submit"
+              >Заказать<span>&#62;</span></button
+            >
+          </div>
+          <div class="swiper-slide slide-view">
+            <p
+              >Тестирование с выдачей<br />
+              технического заключения</p
+            >
+            <p>Цена: 1000 ₽</p>
+            <p>Срок: 30-120 мин</p>
+            <button type="submit" class="form__submit"
+              >Заказать<span>&#62;</span></button
+            >
+          </div>
+          <div class="swiper-slide slide-view">
+            <p
+              >Замена программного<br />
+              обеспечения</p
+            >
+            <p>Цена: 1000 ₽</p>
+            <p>Срок: 30-120 мин</p>
+            <button type="submit" class="form__submit"
+              >Заказать<span>&#62;</span></button
+            >
           </div>
           <!-- Добавьте остальные слайды -->
         </div>
         <!-- Пагинация -->
         <div class="swiper-pagination"></div>
       </div>
+
+      <div class="price-info price-info-position"
+        >Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+        услугу. Для получения коммерческого предложения на постоянное
+        обслуживание, оставьте заявку.</div
+      >
+      <a href="#" class="comercial-proposion"
+        >Получить коммерческое предложение
+        <span class="pink-decor">&#62;</span></a
+      >
 
       <!--футер-->
 

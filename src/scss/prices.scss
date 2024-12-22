@@ -123,34 +123,128 @@ button {
   }
 } */
 
-/*.swiper-container {
-  width: 100%;
-  max-width: 1200px;
+.swiper {
+  max-width: 100%;
   margin: 0 auto;
+  margin-left: 20px;
 }
 
 .swiper-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #f8f9fa;
+  align-items: flex-start;
+  background: $bgWhiteColor;
+}
+
+.slide-view {
   padding: 20px;
-  border: 1px solid #e9ecef;
+  border: 1px solid $lineGrayColor;
   border-radius: 8px;
+  max-width: 300px;
+  height: 200px;
+}
 
-  button {
-    margin-top: 10px;
-    background-color: #ff4081;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
+button {
+  background-color: $pinkDecor;
+  color: $bgWhiteColor;
+  border: none;
+  border-radius: 15px;
+  display: block;
+  text-transform: uppercase;
+  font-family: 'TT Lakes Bold', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 40px;
+  //vertical-align: middle;
+  //margin-right: 20px;
+  cursor: pointer;
 
-    &:hover {
-      background-color: #e0336c;
-    }
+  .form__submit span {
+    margin-left: 5px;
   }
-} */
+}
+
+.pagination-position {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: $swiperBullet;
+}
+
+.swiper-pagination-bullet-active {
+  background: $swiperBulletActive;
+}
+
+.price-info {
+  margin: 30px;
+  max-width: 421px;
+  font-family: 'TT Lakes Compressed Regular', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: $blackText;
+}
+
+.price-info-position {
+  margin: 30px;
+}
+
+.comercial-proposion {
+  text-decoration: none;
+  color: $blackText;
+  font-family: 'TT Lakes Compressed Medium', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.pink-decor {
+  color: $pinkDecor;
+  font-weight: bold;
+}
+
+// 768
+@media (min-width: 768px) and (max-width: 1365px) {
+  .container {
+    display: block;
+    margin-left: 20px;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .slides {
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+// 1366
+@media (min-width: 1366px) {
+  .container {
+    display: block;
+    margin-left: 20px;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .slides {
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}

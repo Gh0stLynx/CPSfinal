@@ -37,6 +37,10 @@
   align-items: center;
 }
 
+button {
+  margin-left: 0;
+}
+
 .aside-header__logo {
   width: 97px;
   height: 51px;
@@ -207,7 +211,7 @@ aside {
     margin-left: 320px;
   }
 
-  .aside-header__back-button {
+  button.aside-header__back-button-position {
     position: absolute;
     top: 20px;
     margin-left: -80px;
