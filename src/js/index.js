@@ -6,17 +6,29 @@ import './sidebar.js'
 import './sidebarSecond.js'
 import './sidebarThird.js'
 
-/*
 // import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle'
+//import Swiper from 'swiper/bundle'
 
 // import styles bundle
-import 'swiper/css/bundle'
+//import 'swiper/css/bundle'
 
 // init Swiper:
-const swiper = new Swiper(...)
-*/
 
+/*const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+}) */
+
+//const swiper = new Swiper(...)
+
+
+/*import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/swiper-bundle.css'; // Подключаем стили Swiper */
 
 /*
 // import Swiper JS

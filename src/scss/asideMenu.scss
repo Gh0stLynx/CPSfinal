@@ -1,228 +1,3 @@
-/*.sidebar {
-  width: 320px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: -320px;
-  transition: left 0.3s;
-  background-color: $bgWhiteColor;
-  z-index: 1;
-}
-
-.content {
-  margin-left: 0; /* Чтобы основное содержимое не перекрывалось боковым меню 
-}
-
-.sidebar.active {
-  left: 0;
-}
-
-.block {
-  width: 320px;
-  height: 1024px;
-  left: 0;
-  background: $bgWhiteColor;
-  box-shadow: 16px 0px 52px 0px $shadowColorOne,
-    -2px 0px 4px 0px $shadowColorTwo;
-  position: absolute;
-}
-
-.aside-header-position {
-  margin-bottom: 35px;
-}
-
-.aside-header {
-  height: 80px;
-  display: flex;
-  align-items: center;
-}
-
-button {
-  margin-left: 0;
-}
-
-.aside-header__logo {
-  width: 97px;
-  height: 51px;
-  margin-left: 90px;
-}
-
-.aside-header__back-button {
-  position: absolute;
-  background: url('../img/close.svg');
-  height: 40px;
-  width: 40px;
-  border: none;
-  left: 24px;
-  top: 20px;
-}
-
-.aside-header__search-button {
-  position: absolute;
-  background: url('../img/search.svg');
-  height: 40px;
-  width: 40px;
-  border: none;
-  left: 256px;
-}
-
-button:hover,
-button:focus {
-  transition-duration: 3s;
-  opacity: 0.3;
-}
-
-aside {
-  margin-bottom: 60px;
-}
-
-.services {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: start;
-}
-
-.services-link {
-  padding-bottom: 30px;
-  padding-left: 24px;
-  font-family: 'TT Lakes Compressed Medium', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  text-decoration: none;
-  color: $blackText;
-}
-
-.services-link:focus,
-.services-link:hover {
-  color: $grayText;
-  position: relative;
-}
-
-.services-link:focus::before,
-.services-link:hover::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -5px;
-  width: 4px;
-  height: 32px;
-  background-color: $blueDecor;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.aside-footer-position {
-  margin-top: 260px;
-}
-
-.aside-footer {
-  height: 80px;
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contacts {
-  display: flex;
-  align-items: center;
-}
-
-.contacts__chat-copy-button {
-  position: absolute;
-  background: url('../img/chatcopy.svg');
-  background-repeat: no-repeat;
-  height: 40px;
-  width: 40px;
-  border: none;
-  left: 24px;
-}
-
-.contacts__chat-button {
-  position: absolute;
-  background: url('../img/chat.svg');
-  height: 40px;
-  width: 40px;
-  border: none;
-  left: 84px;
-}
-
-.contacts__profile-button {
-  position: absolute;
-  background: url('../img/profile.svg');
-  height: 40px;
-  width: 40px;
-  border: none;
-  left: 144px;
-}
-
-.mail {
-  font-family: 'TT Lakes Compressed Regular', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  margin-left: 24px;
-  padding-top: 15px;
-  text-decoration: none;
-  color: $blackText;
-}
-
-.tel {
-  font-family: 'TT Lakes Bold', sans-serif;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: left;
-  margin-left: 24px;
-  margin-bottom: 24px;
-  text-decoration: none;
-  color: $blackText;
-}
-
-.lang a {
-  color: $blackText;
-  text-decoration: none;
-  font-family: 'TT Lakes Compressed Medium', sans-serif;
-  font-size: 16px;
-  text-align: left;
-}
-
-.lang__ru {
-  margin-left: 24px;
-}
-
-.lang a:focus,
-.lang a:hover {
-  color: $grayText;
-}
-
-@media (min-width: 1366px) {
-  .sidebar {
-    width: 320px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: $bgWhiteColor;
-  }
-
-  .content {
-    margin-left: 320px;
-  }
-
-  button.aside-header__back-button-position {
-    position: absolute;
-    top: 20px;
-    margin-left: -80px;
-  }
-
-  .aside-header__logo {
-    margin-left: 20px;
-  }
-}
-  */
-
 .sidebar {
   width: 320px;
   height: 100%;
@@ -264,7 +39,6 @@ aside {
         height: 40px;
         width: 40px;
         border: none;
-        //left: 24px;
         top: 20px;
 
         &:hover,
@@ -415,10 +189,17 @@ aside {
   }
 
   @media (min-width: 1366px) {
-    left: 0;
+    .sidebar {
+      left: 0;
+    }
+
+    .block {
+      left: 320px;
+    }
 
     .content {
-      margin-left: 320px;
+      position: fixed;
+      left: 320px;
     }
 
     .aside-header {
