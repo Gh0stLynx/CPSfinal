@@ -15,7 +15,7 @@
 .slide-view {
   border: 1px solid $lineGrayColor;
   border-radius: 8px;
-  max-width: 300px;
+  max-width: 250px;
   height: 160px;
   padding-left: 20px;
   padding-top: 40px;
@@ -43,8 +43,9 @@ button {
 }
 
 .table__cell-button {
-  align-self: flex-end;
-  justify-self: end;
+  position: relative;
+  left: 100px;
+  bottom: 40px;
 }
 
 .pagination-position {
@@ -112,9 +113,9 @@ button {
 
 // 768
 @media (min-width: 768px) {
-  /*.slides-third-swiper {
-    gap: 0;
-  }*/
+  .table__cell-button {
+    position: static;
+  }
 
   .gray-cell-swiper {
     display: none;
@@ -131,8 +132,8 @@ button {
   .container {
     display: block;
     margin-left: 20px;
-    //overflow: hidden;
-    //max-width: 100%;
+    overflow: hidden;
+    max-width: 100%;
   }
 
   .table-header {
@@ -140,20 +141,31 @@ button {
     flex-direction: row;
   }
 
-  //.table-container {
-  // display: flex;
-  // flex-direction: column;
-  /*flex-wrap: wrap;
+  .table-container {
+    display: block;
+    // flex-direction: column;
+    /*flex-wrap: wrap;
     max-width: 100%;
     border: 1px solid $lineGrayColor;
     margin: 20px auto;
-    border-radius: 8px;
-  } */
+    border-radius: 8px; */
+  }
 
-  .table-row {
+  .table {
+    /*display: grid;
+    grid-template-columns: (5, 100%);
+    grid-auto-flow: column;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .table__row {
     display: flex;
     flex-direction: row;
     height: 80px;
+    max-width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
