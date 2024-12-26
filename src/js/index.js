@@ -15,12 +15,12 @@ import './sidebarThird.js'
 /*const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 'auto',
-  spaceBetween: 20,
+  //spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
   }
-})*/
+}) */
 
 // init Swiper:
 

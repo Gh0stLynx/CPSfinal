@@ -54,6 +54,7 @@ h1 {
 
 .swiper-pagination {
   display: block;
+  height: 20px;
 
   &-bullet {
     background: $swiperBullet;
@@ -68,6 +69,7 @@ h1 {
   display: block;
   max-width: 100%;
   overflow: visible;
+  //gap: 20px;
 
   .link-lenovo,
   .link-samsung,
@@ -132,6 +134,10 @@ h1 {
 
 //768
 @media (min-width: 768px) {
+  .swiper {
+    display: none;
+  }
+
   .container {
     display: block;
     margin-left: 20px;
