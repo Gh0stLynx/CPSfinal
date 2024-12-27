@@ -1,15 +1,16 @@
-export const myVariable = 'CPSfinal'
+const switchButtons = document.querySelectorAll('.switch-button')
+const slidesList = document.querySelectorAll('.slides')
 
-const switchButton = document.querySelector('.switch-button')
-const slides = document.querySelector('.slides')
-const slidesLinks = slides.querySelectorAll('.slides__link')
+switchButtons.forEach((switchButton, index) => {
+  switchButton.addEventListener('click', function () {
+    slidesList[index].classList.toggle('slides_cut')
 
-switchButton.addEventListener('click', function () {
-  slides.classList.toggle('slides_cut')
+    switchButton.textContent = slidesList[index].classList.contains(
+      'slides_cut'
+    )
+      ? 'Показать все'
+      : 'Скрыть'
 
-  switchButton.textContent = slides.classList.contains('slides_cut')
-    ? 'Показать все'
-    : 'Скрыть'
-
-  switchButton.classList.toggle('switch-button_active')
+    switchButton.classList.toggle('switch-button_active')
+  })
 })

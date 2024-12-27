@@ -34,7 +34,7 @@
   width: 40px;
   border: none;
   top: 24px;
-  left: -20px;
+  left: 25px;
 
   &:hover,
   &:focus {
@@ -145,7 +145,7 @@
 @media (min-width: 1366px) {
   .aside-header {
     &__back-button {
-      left: -120px;
+      left: -100px;
     }
 
     .title {

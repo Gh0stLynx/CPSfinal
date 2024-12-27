@@ -20,35 +20,6 @@ h1 {
 
 .switch-button {
   display: none;
-
-  &::before,
-  &::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    border-left: 2px solid $blueDecor;
-    border-top: 2px solid $blueDecor;
-    transform: rotate(45deg);
-  }
-
-  &::before {
-    top: 3px;
-    left: -20px;
-  }
-
-  &::after {
-    top: 10px;
-    left: -20px;
-  }
-
-  &.switch-button_active {
-    &::before,
-    &::after {
-      transform: rotate(-135deg);
-    }
-  }
 }
 
 .swiper-pagination {
@@ -143,7 +114,7 @@ h1 {
   }
 
   .swiper-pagination {
-  display: none;
+    display: none;
   }
 
   .switch-button {

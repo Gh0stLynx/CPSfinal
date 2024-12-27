@@ -183,7 +183,16 @@ button {
       justify-content: space-between;
       align-items: center;
       padding: 20px;
+      //border-bottom: 1px solid $lineGrayColor;
+    }
+
+    &__row::after {
+      content: '';
+      position: relative;
       border-bottom: 1px solid $lineGrayColor;
+      width: 95%;
+      margin-left: 10px;
+      top: 18px;
     }
 
     .slides-third-swiper {
@@ -205,6 +214,6 @@ button {
   }
 
   .swiper-pagination {
-   display: none;
+    display: none;
   }
 }
