@@ -296,6 +296,10 @@ body {
 
 // 1366
 @media (min-width: 1366px) {
+  .content {
+    margin-left: 320px;
+  }
+
   .services-list {
     flex-wrap: wrap;
   }

@@ -13,13 +13,9 @@
   }
 
   .block {
-    width: 320px;
-    height: 1024px;
-    left: 0;
     background: $bgWhiteColor;
     box-shadow: 16px 0px 52px 0px $shadowColorOne,
       -2px 0px 4px 0px $shadowColorTwo;
-    position: absolute;
 
     .aside-header {
       height: 80px;
@@ -189,16 +185,7 @@
   }
 
   @media (min-width: 1366px) {
-    .sidebar {
-      left: 0;
-    }
-
     .block {
-      left: 320px;
-    }
-
-    .content {
-      position: fixed;
       left: 320px;
     }
 
