@@ -143,6 +143,11 @@
 }
 
 @media (min-width: 1366px) {
+  .blur {
+    background-color: rgba(255, 255, 255, 0.5); 
+    opacity: 0.1;
+  }
+
   .aside-header {
     &__back-button {
       left: -100px;
