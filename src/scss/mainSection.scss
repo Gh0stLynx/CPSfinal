@@ -68,21 +68,18 @@ body {
 
   &__burger {
     background-image: url('../img/burger.svg');
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
+    @include custom-background(40px 40px, no-repeat);
     order: -3;
   }
 
   &__repair {
     background-image: url('../img/repair.svg');
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
+    @include custom-background(40px 40px, no-repeat);
   }
 
   &__checkstatus {
     background-image: url('../img/checkstatus.svg');
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
+    @include custom-background(40px 40px, no-repeat);
   }
 }
 
@@ -156,12 +153,7 @@ body {
 
   &::before,
   &::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    border-left: 2px solid $blueDecor;
-    border-top: 2px solid $blueDecor;
+    @include blue-decor($blueDecor);
     transform: rotate(-135deg);
   }
 
@@ -248,20 +240,17 @@ body {
 
         &__call {
           background-image: url('../img/call.svg');
-          background-repeat: no-repeat;
-          background-size: 40px 40px;
+          @include custom-background(40px 40px, no-repeat);
         }
 
         &__chat {
           background-image: url('../img/chat.svg');
-          background-repeat: no-repeat;
-          background-size: 40px 40px;
+          @include custom-background(40px 40px, no-repeat);
         }
 
         &__profile {
           background-image: url('../img/profile.svg');
-          background-repeat: no-repeat;
-          background-size: 40px 40px;
+          @include custom-background(40px 40px, no-repeat);
         }
 
         &__divider {
@@ -353,8 +342,7 @@ body {
       display: inline-block;
       background-image: url('../img/repair.svg');
       background-position: right center;
-      background-repeat: no-repeat;
-      background-size: 40px 40px;
+      @include custom-background(40px 40px, no-repeat);
     }
 
     &.upper-menu__checkstatus {
@@ -362,8 +350,7 @@ body {
       display: inline-block;
       background-image: url('../img/checkstatus.svg');
       background-position: right center;
-      background-repeat: no-repeat;
-      background-size: 40px 40px;
+      @include custom-background(40px 40px, no-repeat);
     }
   }
 }

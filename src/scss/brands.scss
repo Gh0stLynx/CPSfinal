@@ -8,7 +8,7 @@ h1 {
 
   &.section-title {
     min-width: 320px;
-    height: 80px;
+    height: 50px;
     font-family: 'TT Lakes Compressed Regular', sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -24,13 +24,7 @@ h1 {
 
   &::before,
   &::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    border-left: 2px solid $blueDecor;
-    border-top: 2px solid $blueDecor;
+    @include blue-decor($blueDecor);
     transform: rotate(45deg);
   }
 

@@ -13,9 +13,11 @@
   }
 
   .block {
-    background: $bgWhiteColor;
-    box-shadow: 16px 0px 52px 0px $shadowColorOne,
-      -2px 0px 4px 0px $shadowColorTwo;
+    @include background-and-shadow(
+      $bgWhiteColor,
+      $shadowColorOne,
+      $shadowColorTwo
+    );
 
     .aside-header {
       height: 80px;

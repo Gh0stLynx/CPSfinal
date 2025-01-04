@@ -1,12 +1,5 @@
 .sidebar-third {
-  width: 320px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: -420px;
-  transition: right 0.3s;
-  background-color: $bgWhiteColor;
-  z-index: 2;
+  @include sidebar-style($bgWhiteColor, $lineBlueColor);
 
   &.active {
     right: 0;
@@ -21,9 +14,11 @@
   width: 320px;
   height: 1024px;
   right: 0;
-  background: $bgWhiteColor;
-  box-shadow: 16px 0px 52px 0px $shadowColorOne,
-    -2px 0px 4px 0px $shadowColorTwo;
+  @include background-and-shadow(
+    $bgWhiteColor,
+    $shadowColorOne,
+    $shadowColorTwo
+  );
   position: absolute;
 }
 
@@ -49,7 +44,7 @@
   align-items: center;
 
   &-position {
-    margin-top: 50px;
+    padding-top: 50px;
   }
 
   &__description {
@@ -144,7 +139,7 @@
 
 @media (min-width: 1366px) {
   .blur {
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.1;
   }
 
@@ -152,16 +147,15 @@
     &__back-button {
       left: -100px;
     }
+  }
 
-    .title {
-      &-position {
-        position: absolute;
-        top: -75px;
-      }
-    }
+  .title-position {
+    position: relative;
+    top: -70px;
+  }
 
-    .form {
-      margin-top: 90px;
-    }
+  .form {
+    position: relative;
+    top: -65px;
   }
 }

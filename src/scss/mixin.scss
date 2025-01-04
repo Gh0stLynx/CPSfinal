@@ -1,0 +1,31 @@
+@mixin custom-background($size, $repeat) {
+  background-size: $size;
+  background-repeat: $repeat;
+}
+
+@mixin blue-decor($blueDecor) {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-left: 2px solid $blueDecor;
+  border-top: 2px solid $blueDecor;
+}
+
+@mixin sidebar-style($bgWhiteColor, $lineBlueColor) {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -420px;
+  transition: right 0.3s;
+  background-color: $bgWhiteColor;
+  border-left: 1px solid $lineBlueColor;
+  z-index: 2;
+}
+
+@mixin background-and-shadow($bgWhiteColor, $shadowColorOne, $shadowColorTwo) {
+  background: $bgWhiteColor;
+  box-shadow: 16px 0px 52px 0px $shadowColorOne,
+    -2px 0px 4px 0px $shadowColorTwo;
+}
