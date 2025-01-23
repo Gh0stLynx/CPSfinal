@@ -49,7 +49,7 @@
   align-items: center;
 
   &-position {
-    padding-top: 50px;
+    margin-top: 30px;
   }
 
   &__description {
@@ -96,60 +96,60 @@
     width: 136px;
     height: 32px;
     align-self: flex-end;
-
-    span {
-      margin-left: 5px;
-    }
   }
 
-  input,
-  textarea {
-    border: 1px solid $lineGrayColor;
-    border-radius: 5px;
-    font-family: 'TT Lakes Medium', sans-serif;
-    font-size: 16px;
-    color: $lightGrayText;
-    padding-left: 10px;
+  & span {
+    margin-left: 5px;
+  }
+}
 
-    &.form__textarea {
-      padding-top: 15px;
-    }
+input,
+textarea {
+  border: 1px solid $lineGrayColor;
+  border-radius: 5px;
+  font-family: 'TT Lakes Medium', sans-serif;
+  font-size: 16px;
+  color: $lightGrayText;
+  padding-left: 10px;
+
+  &.form__textarea {
+    padding-top: 15px;
+  }
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.conf {
+  font-family: 'TT Lakes Medium', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $grayText;
+
+  &-position {
+    margin-left: 8px;
   }
 
-  label {
-    margin-bottom: 10px;
+  & span {
+    color: $pinkText;
   }
+}
 
-  .conf {
-    font-family: 'TT Lakes Medium', sans-serif;
-    font-size: 14px;
-    line-height: 16px;
-    color: $grayText;
-
-    &-position {
-      margin-left: 8px;
-    }
-
-    span {
-      color: $pinkText;
-    }
-  }
-
-  button {
-    background-color: $pinkDecor;
-    color: $bgWhiteColor;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    display: block;
-    text-transform: uppercase;
-    font-family: 'TT Lakes Bold', sans-serif;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
-    vertical-align: middle;
-    margin-right: 20px;
-  }
+button {
+  background-color: $pinkDecor;
+  color: $bgWhiteColor;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  text-transform: uppercase;
+  font-family: 'TT Lakes Bold', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 20px;
 }
 
 @media (min-width: 1366px) {
