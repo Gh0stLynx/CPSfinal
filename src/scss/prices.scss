@@ -177,7 +177,6 @@ button {
     &__row {
       display: flex;
       flex-direction: row;
-      height: 50px;
       max-width: 100%;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -191,7 +190,7 @@ button {
       border-bottom: 1px solid $lineGrayColor;
       width: 95%;
       margin-left: 10px;
-      top: 18px;
+      top: 20px;
     }
 
     &__cell {
