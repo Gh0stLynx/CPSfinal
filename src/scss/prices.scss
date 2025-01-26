@@ -2,27 +2,25 @@
   max-width: 100%;
   margin: 0 auto;
   margin-left: 20px;
+}
 
-  .swiper-slide {
-    .slide-view {
-      border: 1px solid $lineGrayColor;
-      border-radius: 8px;
-    }
-  }
+.swiper-slide .slide-view {
+  border: 1px solid $lineGrayColor;
+  border-radius: 8px;
+}
 
-  .pagination-position {
-    position: relative;
-    text-align: center;
-    margin-top: 10px;
+.pagination-position {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
 
-    .swiper-pagination-bullet {
-      background: $swiperBullet;
-    }
+.swiper-pagination-bullet {
+  background: $swiperBullet;
+}
 
-    .swiper-pagination-bullet-active {
-      background: $swiperBulletActive;
-    }
-  }
+.swiper-pagination-bullet-active {
+  background: $swiperBulletActive;
 }
 
 button {
@@ -36,12 +34,10 @@ button {
   line-height: 24px;
   text-align: center;
   cursor: pointer;
+}
 
-  .form__submit {
-    span {
-      margin-left: 10px;
-    }
-  }
+.form__submit span {
+  margin-left: 10px;
 }
 
 .table__row {
@@ -87,11 +83,11 @@ button {
   line-height: 24px;
   position: relative;
   padding-left: 30px;
+}
 
-  .pink-decor {
-    color: $pinkDecor;
-    font-weight: bold;
-  }
+.pink-decor {
+  color: $pinkDecor;
+  font-weight: bold;
 }
 
 .gray-cell-swiper {
@@ -154,7 +150,7 @@ button {
     max-width: 100%;
     justify-content: space-between;
 
-    .table-header__cell {
+    &__cell {
       flex: 1;
 
       &:first-child {
@@ -167,6 +163,10 @@ button {
 
   .table-container {
     display: block;
+  }
+
+  .slides-third-swiper {
+    row-gap: 0;
   }
 
   .table {
@@ -183,7 +183,6 @@ button {
       justify-content: space-between;
       align-items: center;
       padding: 20px;
-      //border-bottom: 1px solid $lineGrayColor;
     }
 
     &__row::after {
@@ -195,11 +194,7 @@ button {
       top: 18px;
     }
 
-    .slides-third-swiper {
-      row-gap: 0;
-    }
-
-    .table__cell {
+    &__cell {
       flex: 1;
 
       &:first-child {
@@ -211,9 +206,5 @@ button {
         text-align: right;
       }
     }
-  }
-
-  .swiper-pagination {
-    display: none;
   }
 }
