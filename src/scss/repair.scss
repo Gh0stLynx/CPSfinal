@@ -39,28 +39,28 @@ h2 {
   max-width: 100%;
   overflow: visible;
   gap: 20px;
+}
 
-  .link-laptop,
-  .link-tablet,
-  .link-pc,
-  .link-monitor {
-    background-repeat: no-repeat;
-    height: 160px;
-    width: 240px;
-  }
+.link-laptop,
+.link-tablet,
+.link-pc,
+.link-monitor {
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 240px;
+}
 
-  .link-laptop {
-    background: url('../img/cat1.png');
-  }
-  .link-tablet {
-    background: url('../img/cat2.png');
-  }
-  .link-pc {
-    background: url('../img/cat3.png');
-  }
-  .link-monitor {
-    background: url('../img/cat4.png');
-  }
+.link-laptop {
+  background: url('../img/cat1.png');
+}
+.link-tablet {
+  background: url('../img/cat2.png');
+}
+.link-pc {
+  background: url('../img/cat3.png');
+}
+.link-monitor {
+  background: url('../img/cat4.png');
 }
 
 .swiper {
@@ -68,11 +68,11 @@ h2 {
   display: block;
   overflow-x: hidden;
   max-width: 100%;
+}
 
-  .swiper-wrapper {
-    display: flex;
-    max-width: 100%;
-  }
+.swiper-wrapper {
+  display: flex;
+  max-width: 100%;
 }
 
 .pagination-position {
