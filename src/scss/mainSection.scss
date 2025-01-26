@@ -61,11 +61,6 @@ body {
     order: -1;
   }
 
-  a {
-    height: 40px;
-    width: 40px;
-  }
-
   &__burger {
     background-image: url('../img/burger.svg');
     @include custom-background(40px 40px, no-repeat);
@@ -83,13 +78,18 @@ body {
   }
 }
 
+.header a {
+  height: 40px;
+  width: 40px;
+}
+
 .title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
   &__description {
-    margin-left: 24px;
+    padding-left: 20px;
     font-family: 'TT Lakes Bold', sans-serif;
     font-size: 28px;
     line-height: 40px;
@@ -98,7 +98,7 @@ body {
     &::before {
       content: '';
       position: absolute;
-      left: -24px;
+      left: -8px;
       width: 4px;
       height: 40px;
       top: 50%;
@@ -114,8 +114,10 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 0;
+  padding-left: 30px;
+  padding-bottom: 10px;
   overflow: scroll;
+  text-transform: initial;
 
   &__button {
     width: auto;
@@ -128,10 +130,6 @@ body {
     font-family: 'TT Lakes Compressed Medium', sans-serif;
     font-size: 16px;
     line-height: 24px;
-
-    &:first-child {
-      margin-left: 16px;
-    }
 
     &:hover,
     &:focus {
@@ -173,10 +171,11 @@ body {
     height: 90px;
     overflow: hidden;
   }
+}
 
-  .service__content {
-    margin: 20px;
-  }
+.content .service__content {
+  margin: 5px;
+  margin-left: 20px;
 }
 
 .service__img img {
@@ -228,59 +227,59 @@ body {
       align-items: center;
       order: -1;
       margin-left: auto;
+    }
 
-      .tablet {
-        display: flex;
-        align-items: center;
-        gap: 24px;
+    &__logo {
+      width: 96.55px;
+      height: 50.81px;
+      order: -1;
+    }
 
-        a {
-          height: 40px;
-        }
+    &__burger {
+      order: -3;
+      margin-left: 24px;
+    }
 
-        &__call {
-          background-image: url('../img/call.svg');
-          @include custom-background(40px 40px, no-repeat);
-        }
-
-        &__chat {
-          background-image: url('../img/chat.svg');
-          @include custom-background(40px 40px, no-repeat);
-        }
-
-        &__profile {
-          background-image: url('../img/profile.svg');
-          @include custom-background(40px 40px, no-repeat);
-        }
-
-        &__divider {
-          height: 32px;
-          border-left: 2px solid $lineGrayColor;
-          border-radius: 1px 0px 0px 0px;
-          order: 1;
-        }
-      }
-
-      &__logo {
-        width: 96.55px;
-        height: 50.81px;
-        order: -1;
-      }
-
-      &__burger {
-        order: -3;
-        margin-left: 24px;
-      }
-
-      &__divider {
-        order: -2;
-      }
+    &__divider {
+      order: -2;
     }
   }
+}
 
-  .title__computer {
-    display: none;
+.tablet {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &__call {
+    background-image: url('../img/call.svg');
+    @include custom-background(40px 40px, no-repeat);
   }
+
+  &__chat {
+    background-image: url('../img/chat.svg');
+    @include custom-background(40px 40px, no-repeat);
+  }
+
+  &__profile {
+    background-image: url('../img/profile.svg');
+    @include custom-background(40px 40px, no-repeat);
+  }
+
+  &__divider {
+    height: 32px;
+    border-left: 2px solid $lineGrayColor;
+    border-radius: 1px 0px 0px 0px;
+    order: 1;
+  }
+}
+
+.tablet a {
+  height: 40px;
+}
+
+.title__computer {
+  display: none;
 }
 
 // 1366
@@ -320,11 +319,11 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
 
-    .title__computer {
-      display: flex;
-      margin-left: auto;
-    }
+  .title__computer {
+    display: flex;
+    margin-left: auto;
   }
 
   .upper-menu a {
