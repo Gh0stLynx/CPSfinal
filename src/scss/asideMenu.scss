@@ -192,8 +192,10 @@ aside {
 
 @media (min-width: 1366px) {
   .sidebar {
+    position: relative;
     &__block {
       left: 320px;
+      min-height: 2178px;
     }
   }
 
@@ -205,6 +207,10 @@ aside {
     &__logo {
       position: absolute;
       left: -70px;
+    }
+
+    &__back-button-visibility {
+      visibility: hidden;
     }
   }
 }
