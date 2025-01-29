@@ -264,12 +264,12 @@ body {
       background-size: 40px 40px;
       background-repeat: no-repeat; } }
 
-h2 {
+h3 {
   margin-bottom: 35px;
   margin-top: 35px;
   padding-top: 20px;
   padding-left: 20px; }
-  h2.section-title {
+  h3.section-title {
     min-width: 320px;
     height: 50px;
     font-family: 'TT Lakes Compressed Regular', sans-serif;
@@ -396,11 +396,11 @@ h2 {
     font-size: 14px;
     font-family: 'TT Lakes Compressed Medium', sans-serif; } }
 
-h2 {
+h3 {
   margin-bottom: 35px;
   padding-top: 20px;
   padding-left: 20px; }
-  h2.section-title {
+  h3.section-title {
     min-width: 320px;
     height: 50px;
     font-family: 'TT Lakes Compressed Regular', sans-serif;
@@ -816,13 +816,18 @@ aside {
     margin-left: 24px; }
 
 @media (min-width: 1366px) {
-  .sidebar__block {
-    left: 320px; }
+  .sidebar {
+    position: relative; }
+    .sidebar__block {
+      left: 320px;
+      min-height: 2178px; }
   .aside-header__search-button {
     left: 260px; }
   .aside-header__logo {
     position: absolute;
-    left: -70px; } }
+    left: -70px; }
+  .aside-header__back-button-visibility {
+    visibility: hidden; } }
 
 .sidebar-second {
   width: 320px;
@@ -873,7 +878,7 @@ aside {
   .title__description {
     margin-left: 8px;
     font-family: 'TT Lakes Bold', sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 40px;
     position: relative; }
     .title__description::before {
@@ -1006,7 +1011,7 @@ button {
   .title__description {
     margin-left: 8px;
     font-family: 'TT Lakes Bold', sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 40px;
     position: relative; }
     .title__description::before {
